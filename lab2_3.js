@@ -2,6 +2,10 @@
 Преобразуйте массив объектов в массив строк
 */
 
-let num = [1, 23, 24, 53, 20];
-let numStr = num.toString();
+let num = [
+    {name:'Lisa', gen:'girl'},
+    {name:'Kris', gen:'girl'},
+    {name:'Ben', gen:'boy'}
+];
+let numStr = num.map(item => item.name);
 console.log(numStr);
